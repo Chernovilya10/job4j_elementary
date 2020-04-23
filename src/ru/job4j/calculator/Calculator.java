@@ -5,7 +5,7 @@ public class Calculator {
         int one = 1;
         int two = 2;
 
-        int onePlusTwo = 1 + 2;
+        int onePlusTwo = one + two;
 
         int six = 6;
         int four = 4;
@@ -15,5 +15,15 @@ public class Calculator {
         int fiveMinusTwo = five - two;
         int fourTimeTwo = four * two;
         System.out.println("sixDivTwo=" + sixDivTwo + " fiveMinusTwo=" + fiveMinusTwo + " fourTimeTwo=" + fourTimeTwo);
+
+        one = 10;
+        two = 11;
+        onePlusTwo = one + two;
+        System.out.println(onePlusTwo);
+
+        int age = 18;
+        age = age + 10;
+
+
     }
 }
