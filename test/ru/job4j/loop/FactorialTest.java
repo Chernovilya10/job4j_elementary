@@ -25,14 +25,6 @@ public class FactorialTest {
         int in = 1;
         int out = 1;
         int expected = Factorial.calc(in);
-        assertThat(out, is(1));
+        assertThat(out, is(expected));
     }
-    @Test
-    public void whenCalculateFactorialForMinusTenThenZero() {
-        int in = -10;
-        int out = 0;
-        int expected = Factorial.calc(in);
-        assertThat(out, is(0));
-    }
-
 }
