@@ -1,17 +1,36 @@
 package ru.job4j.converter;
 
+/**
+ * Class Converter Класс для ковертации валюты: рубля в доллар и рубля в евро.
+ *
+ * @author Ilia Chernov (i.chernov93@yandex.ru)
+ */
 public class Converter {
 
+    /**
+     * Method rubleToEuro Метод конвертации из рубля в евро.
+     * @param value Сумма в рублях.
+     * @return Сумма в евро.
+     */
     public static int rubleToEuro(int value) {
         int rsl = value / 70;
         return rsl;
     }
 
+    /**
+     * Method rubleToDollar Метод конвертации из рубля в доллар.
+     * @param value Сумма в рублях.
+     * @return Сумма в долларах.
+     */
     public static int rubleToDollar(int value) {
         int rsl = value / 60;
         return rsl;
     }
 
+    /**
+     * Main Пример порядка тестирования.
+     * @param args - args.
+     */
     public static void main(String[] args) {
         int euro = Converter.rubleToEuro(140);
         System.out.println("140 rubles are " + euro + " euro");
