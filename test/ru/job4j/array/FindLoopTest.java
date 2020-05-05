@@ -50,7 +50,7 @@ public class FindLoopTest {
         int value = 11;
         int start = 2;
         int finish = 4;
-        int expect = 2;
+        int expect = -1;
         int result = FindLoop.indexOf(input,  value, start, finish);
         assertThat(result, is(expect));
     }
