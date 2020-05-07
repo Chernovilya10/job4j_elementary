@@ -38,4 +38,12 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static char[] extraDiagonal(char[][] board) {
+        char[] rst = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rst[i] = board[i][i];
+        }
+        return rst;
+    }
 }

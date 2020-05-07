@@ -83,6 +83,29 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result, is(true));
     }
+    @Test
+    public void whenDiagonal1() {
+        char[][] input = new char[][] {
+                {'X', 'K', 'R', 'Q'},
+                {'D', 'R', 'L', 'W'},
+                {'P', 'H', 'N', 'E'},
+                {'K', 'G', 'X', 'X'}
+        };
+        char[] rst = MatrixCheck.extraDiagonal(input);
+        char[] expect = {'X', 'R', 'N', 'X'};
+        assertThat(rst, is(expect));
+    }
+    @Test
+    public void whenDiagonal2() {
+        char[][] input = new char[][] {
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'},
+        };
+        char[] rst = MatrixCheck.extraDiagonal(input);
+        char[] expect = {'X', 'X', 'X'};
+        assertThat(rst, is(expect));
+    }
 
 
 }
