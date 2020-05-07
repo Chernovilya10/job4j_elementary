@@ -19,4 +19,23 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    public static boolean monoVertical(char[][] board, int column) {
+        boolean result = true;
+        char check = 'X';
+        for (int i = 0; i < column; i++) {
+            for (int j = 0; j < column; j++) {
+                if (board[j][i] != check) {     //для проверки на наличие моностолбца необходимо поменять i и j
+                    result = false;
+                    break;
+                } else {
+                 result = true;
+                }
+            }
+            if (result) {
+                break;
+            }
+        }
+        return result;
+    }
 }
