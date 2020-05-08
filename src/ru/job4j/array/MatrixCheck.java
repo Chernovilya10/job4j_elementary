@@ -17,10 +17,10 @@ public class MatrixCheck {
         boolean result = true;
         char check = 'X';
         for (int i = 0; i < board.length; i++) {
-                if (board[i][column] != check) {
-                    result = false;
-                    break;
-                }
+            if (board[i][column] != check) {
+                result = false;
+                break;
+            }
         }
         return result;
     }
@@ -38,10 +38,11 @@ public class MatrixCheck {
         char k = 'X';
         for (int i = 0; i < board.length; i++) {
             if (board[i][i] != k) {
-                result = false;
-            } else if (monoHorizontal(board, i) || monoVertical(board, i)) {
-                result = true;
-                break;
+                if (monoHorizontal(board, i) || monoVertical(board, i)) {
+                    result = true;
+                    break;
+                }
+
             }
         }
         return result;
