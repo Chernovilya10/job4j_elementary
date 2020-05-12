@@ -8,9 +8,14 @@ public class SwitchArray {
         return array;
     }
 
+    /**
+     * Method swapBorder - меняет местами первый и последний эл-т массива
+     * Ошибка: length - длина массива, в данном случае = 6, индекс посл эл-тп массива = 5, поэтому посл эл-т массива .length -1
+     * @param array - передаваемый исходный массив
+     * @return
+     */
     public static int[] swapBorder(int[] array) {
         int temp = array[0];
-        //length - длина массива, в данном случае = 6, индекс посл эл-тп массива = 5, поэтому посл эл-т массива .length -1
         array[0] = array[array.length - 1];
         array[array.length - 1] = temp;
         return array;

@@ -1,15 +1,23 @@
 package ru.job4j.calculator;
 
 public class Fit {
-
+    /**
+     * Method manWeight - определяет идеальный вес мужчины
+     * @param height - рост в см
+     * @return
+     */
         public static double manWeight(double height) {
-            double rsl = (height - 100) * 1.15; //ф-ла идеального веса для мужчин
+            double rsl = (height - 100) * 1.15;
             return rsl;
         }
 
-
+    /**
+     * Method womanWeight - определяет идеальный вес женищины
+     * @param height  - рост в см
+     * @return
+     */
         public static double womanWeight(double height) {
-            double rsl = (height - 110) * 1.15; //ф-ла идеального веса для женщин
+            double rsl = (height - 110) * 1.15;
             return rsl;
         }
 

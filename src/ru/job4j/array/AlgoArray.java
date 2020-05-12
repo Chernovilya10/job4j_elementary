@@ -1,21 +1,24 @@
 package ru.job4j.array;
 
 public class AlgoArray {
+    /**
+     * int temp = array[0];    переменная для временного хранения значение ячейки с индексом 0.
+     * array[0] = array[3];    записываем в ячейку с индексом 0 значение ячейки с индексом 3.
+     * array[3] = temp;        записываем в ячейку с индексом 3 значение временной переменной.
+     * Было {5, 3, 2, 1, 4}, стало {1, 3, 2, 5, 4}
+     * @param args
+     */
     public static void main(String[] args) {
         int[] array = new int[] {5, 3, 2, 1, 4};
-        int temp = array[0];    // переменная для временного хранения значение ячейки с индексом 0.
-        array[0] = array[3];    // записываем в ячейку с индексом 0 значение ячейки с индексом 3.
-        array[3] = temp;        // записываем в ячейку с индексом 3 значение временной переменной.
-        //array now {1, 3, 2, 5, 4}
+        int temp = array[0];
+        array[0] = array[3];
+        array[3] = temp;
         temp = array[1];
         array[1] = array[2];
         array[2] = temp;
-        //array now {1, 2, 3, 5, 4}
         temp = array[3];
         array[3] = array[4];
         array[4] = temp;
-        //array now {1, 2, 3, 4, 5}
-
         for (int index = 0; index < array.length; index++) {
             System.out.println(array[index]);
         }

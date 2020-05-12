@@ -6,6 +6,7 @@ public class AlertDivByZero {
         posibleDiv(0);
         posibleDiv(-9);
     }
+
     public static void posibleDiv(int number) {
         if (number == 0) {
             System.out.println("Could not div by 0.");

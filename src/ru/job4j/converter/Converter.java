@@ -6,7 +6,6 @@ package ru.job4j.converter;
  * @author Ilia Chernov (i.chernov93@yandex.ru)
  */
 public class Converter {
-
     /**
      * Method rubleToEuro Метод конвертации из рубля в евро.
      * @param value Сумма в рублях.
@@ -16,7 +15,6 @@ public class Converter {
         int rsl = value / 70;
         return rsl;
     }
-
     /**
      * Method rubleToDollar Метод конвертации из рубля в доллар.
      * @param value Сумма в рублях.
@@ -26,7 +24,6 @@ public class Converter {
         int rsl = value / 60;
         return rsl;
     }
-
     /**
      * Main Пример порядка тестирования.
      * @param args - args.

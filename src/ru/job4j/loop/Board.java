@@ -6,12 +6,12 @@ public class Board {
             for (int cell = 0; cell < widht; cell++) {
                 int k = (row + cell) % 2;
                 if (k == 0) {
-                    System.out.print("X");        //печатаем Х
+                    System.out.print("X");
                 } else {
-                    System.out.print(" ");        //печатаем пробел
+                    System.out.print(" ");
                 }
             }
-            System.out.println();       //переводим на новую строку
+            System.out.println();
         }
     }
     public static void main(String[] args) {
